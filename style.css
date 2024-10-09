@@ -1,0 +1,99 @@
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    font: 1.2em Helvetica, arial, sans-serif;
+    display: grid;
+    /*grid template-areas:
+    "header cell"
+    "nav-cell"
+    "main-cell"
+    "footer-cell";*/
+}
+main,header,footer{
+    border: 1ps solid #ccc7c8;
+    background-color: rgb(243, 244, 245);
+    border-radius: 5px;
+}
+#header1{
+    position: absolute; 
+    height: 100px;
+    top:-30px;
+    animation: mg1 3s forwards;
+    left: 80%;
+}
+
+@keyframes mg1 {
+    from{left: 80%;}
+    to{left: 30%;}
+}
+#header2{
+    position: absolute;
+    height: 70px;
+    top: -5px;
+   animation: mg2 3s forwards;
+   left: 80%;
+}
+
+@keyframes mg2 {
+    from{left: 80%;}
+    to{left: 45%;}
+}
+
+#header3{
+    position: absolute;
+    height: 80px;
+    top: 0px;
+   animation: mg3 3s forwards;
+   left: 80%;
+}
+
+@keyframes mg3 {
+    from{left: 80%;}
+    to{left: 63%;}
+}
+nav{
+    top: 20px;
+    
+}
+nav{
+    float: left;
+    color:  #ed4190;
+    border: 1px solid #fff;
+    margin: 3px;
+    padding: 2px 4px;
+    height: 20px;
+    font-size: 17px;
+    background-color: #ffffff80;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0 #00000066,0 0 2px 0 #0000004d;
+}
+nav a:hover{
+    color: #fff;
+}
+.search-container{
+    float: right;
+    padding-top: 3px;
+}
+.icon-white,.icon-pink{
+    padding: 4px;
+    background-color: #cddc39;
+    min-width: 30px;
+    color:  #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.icon-pink{
+    color: #ed4190;
+}
+main{
+    /*grid- areas: main-cell*/
+    display: grid;
+    padding: 0 5px;
+}
+footer{
+    margin: 2px;
+    border: 1px soild #ccc7c8;
+    border-radius: 5px;
+    text-align: center;
+}
